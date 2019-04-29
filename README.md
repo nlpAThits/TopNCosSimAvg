@@ -8,7 +8,7 @@ Code for the RELATIONS 2019 Workshop paper
 The following call will reproduce the top avg_cos_sim result reached when only label information is used.
 
 ```shell
-$ python perform-c-p-matching.py  --mode dev --input **`label`** --sim_ts .430 --units idf_tokens 
+$ python perform-c-p-matching.py  --mode dev --input ``**`label`**`` --sim_ts .430 --units idf_tokens 
     --embeddings google  --measures avg_cos_sim  --print_classifications yes
 ```
 
