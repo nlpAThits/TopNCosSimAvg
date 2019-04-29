@@ -12,5 +12,5 @@ The <b>original Google</b> embeddings (GoogleNews-vectors-negative300.bin) were 
 We distribute the WOMBAT-imported version under the same license as the original: <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
 <br>
 <b>Important note:</b><br>
-The WOMBAT version of the Google embeddings is a 929023 word <b>subset</b> of the original 3 mio words, containing the <b>single-word vocabulary items</b> only. It was created by extracting plain text word-vector pairs from the original binary file (using this), and selecting only words without underscore characters. This was was done because multi-word expression vectors require non-trivial, vocabulary-aware tokenization, and it (massively!) reduced model size.
+The WOMBAT version of the Google embeddings is a 929023 word <b>subset</b> of the original 3 mio words, containing the <b>single-word vocabulary items</b> only. It was created by extracting plain text word-vector pairs from the original binary file, and selecting only words without underscore characters. This was was done because multi-word expression vectors require non-trivial, vocabulary-aware tokenization, and it (massively!) reduced model size.
 </p>
