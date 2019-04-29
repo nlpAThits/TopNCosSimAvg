@@ -27,3 +27,20 @@ $ python perform-c-p-matching.py  --mode dev --input both        --sim_ts .545 -
 </p>
 
 ![DEV results top_n_cos_sim_avg](https://github.com/nlpAThits/TopNCosSimAvg/blob/master/images/dev-topn.png "DEV results top_n_cos_sim_avg")
+
+
+<p>
+Likewise, the following calls will reproduce the three top top_n_cos_sim_avg results:
+
+```shell
+$ python perform-c-p-matching.py  --mode dev --input label      --sim_ts .345 --embeddings google  --units tokens 
+    --measures top_n_cos_sim_avg --top_n 22 --print_classifications yes
+```
+
+```shell
+$ python perform-c-p-matching.py  --mode dev --input description --sim_ts .345 --embeddings google  --units tokens 
+    --measures top_n_cos_sim_avg --top_n 22 --print_classifications yes
+```
+
+
+</p>
