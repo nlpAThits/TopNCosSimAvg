@@ -5,9 +5,10 @@ Code for the RELATIONS 2019 Workshop paper
 
 
 <p>
+The following call will reproduce the top result reached when only label information is used.
 
 ```shell
-$ 
+$ python perform-c-p-matching.py  --mode dev --embeddings google --input label --units idf_tokens --measures avg_cos_sim  --sim_ts .430 --print_classifications yes
 ```
 </p>
 
