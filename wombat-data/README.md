@@ -10,6 +10,7 @@ We distribute the WOMBAT-imported version of the GloVe embeddings under the same
 <p>
 The <b>original Google</b> embeddings (GoogleNews-vectors-negative300.bin) were obtained from <a href="https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing">here</a>.
 We distribute the WOMBAT-imported version under the same license as the original: <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+<br>
 <b>Important note:</b><br>
-The WOMBAT version of the Google embeddings is a 929023 word <b>subset</b> of the original 3 mio words, containing the <b>single-word vocabulary items</b> only. It was created by extracting plain text word-vector pairs from the original binary file (using this), and selecting only words without underscore characters. This was was done in order to (massively!) reduce model size, and also because multi-word expressions require non-trivial tokenization.
+The WOMBAT version of the Google embeddings is a 929023 word <b>subset</b> of the original 3 mio words, containing the <b>single-word vocabulary items</b> only. It was created by extracting plain text word-vector pairs from the original binary file (using this), and selecting only words without underscore characters. This was was done because multi-word expression vectors require non-trivial, vocabulary-aware tokenization, and it (massively!) reduced model size.
 </p>
