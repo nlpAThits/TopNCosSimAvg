@@ -33,8 +33,8 @@ $ python perform-c-p-matching.py  --mode dev --input both        --sim_ts .545 -
 Likewise, the following calls will reproduce the three top top_n_cos_sim_avg results:
 
 ```shell
-$ python perform-c-p-matching.py  --mode dev --input label      --sim_ts .345 --embeddings google  --units tokens 
-    --measures top_n_cos_sim_avg --top_n 22 --print_classifications yes
+$ python perform-c-p-matching.py  --mode dev --input label      --sim_ts .345 --units tokens 
+    --embeddings google  --measures top_n_cos_sim_avg --top_n 22 --print_classifications yes
 ```
 
 ```shell
