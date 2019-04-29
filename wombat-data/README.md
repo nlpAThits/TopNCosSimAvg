@@ -1,5 +1,5 @@
 <p>
-Download GloVe and Google embeddings in WOMBAT format from <a href="https://cosyne.h-its.org/nlpdl/wombat/wombat_embs_1625.zip">here</a> (GloVe) and <a href="https://cosyne.h-its.org/nlpdl/wombat/wombat_embs_1627.zip">here</a> (Google).
+Download GloVe and Google embeddings in WOMBAT format from <a href="https://cosyne.h-its.org/nlpdl/wombat/wombat_embs_1625.zip">here</a> (GloVe) and <a href="https://cosyne.h-its.org/nlpdl/wombat/wombat_embs_1627.zip">here</a> (Google), unzip them, and put them into this directory.
 </p>
 
 <p>
