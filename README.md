@@ -9,7 +9,7 @@ Create a new virtual environment with Python 3.6 first:
 $ conda create --name topn python=3.6
 $ conda activate topn
 ```
-This code uses the <a>WOMBAT-API</a>, which can be installed as follows:
+This code uses the <a href="https://github.com/nlpAThits/WOMBAT">WOMBAT-API</a>, which can be installed as follows:
 ```shell
 $ git clone https://github.com/nlpAThits/WOMBAT.git
 $ cd WOMBAT
