@@ -34,8 +34,8 @@ The start, end, and step values for sim_ts can be supplied like this: ```--sim_t
 The following call will search the whole range for 'label' for all four unit types: ```types = -tf +idf```
 
 ```shell
-$ (topn) python perform-c-p-matching.py --input label --embeddings google --measures avg_cos_sim --sim_ts 0.3:1.0:0.005 
-  --units types,tokens,idf_types,idf_tokens --mode dev --draw_plots
+$ (topn) python perform-c-p-matching.py --input label --embeddings google --measures avg_cos_sim 
+  --sim_ts 0.3:1.0:0.005 --units types,tokens,idf_types,idf_tokens --mode dev --draw_plots
 ```
 
 
