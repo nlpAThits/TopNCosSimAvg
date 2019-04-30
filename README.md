@@ -20,6 +20,7 @@ $ git clone https://github.com/nlpAThits/WOMBAT.git
 $ cd WOMBAT
 $ pip install .
 ```
+Put the required files into the folders ```data```, ```wombat-data```, ```concept-project-mapping-dataset```, and ```fastText``` (see the respective README.md files in these folders).
 
 ![DEV results avg_cosine](https://github.com/nlpAThits/TopNCosSimAvg/blob/master/images/dev-avg.png "DEV results avg_cosine")
 
