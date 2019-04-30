@@ -4,6 +4,17 @@ Code for the RELATIONS 2019 Workshop paper
 <b>Semantic Matching of Documents from Heterogeneous Collections: A Simple and Transparent Method for Practical Applications</b> <a href="https://arxiv.org/abs/1904.12550">arXiv</a>
 
 # Installation
+Create a new virtual environment with Python 3.6 first:
+```shell
+$ conda create --name topn python=3.6
+$ conda activate topn
+```
+This code uses the <a>WOMBAT-API</a>, which can be installed as follows:
+```shell
+$ git clone https://github.com/nlpAThits/WOMBAT.git
+$ cd WOMBAT
+$ pip install .
+```
 
 ![DEV results avg_cosine](https://github.com/nlpAThits/TopNCosSimAvg/blob/master/images/dev-avg.png "DEV results avg_cosine")
 
