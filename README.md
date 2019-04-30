@@ -11,15 +11,20 @@ $ conda activate topn
 ```
 Clone this repository:
 ```shell
-$ git clone https://github.com/nlpAThits/TopNCosSimAvg.git
+$ (topn) git clone https://github.com/nlpAThits/TopNCosSimAvg.git
 ```
 Put the required files into the folders ```data```, ```wombat-data```, ```concept-project-mapping-dataset```, and ```fastText``` (see the respective README.md files in these folders).
 
 The code in this repository uses the <a href="https://github.com/nlpAThits/WOMBAT">WOMBAT-API</a>, which can be installed as follows:
 ```shell
-$ git clone https://github.com/nlpAThits/WOMBAT.git
-$ cd WOMBAT
-$ pip install .
+$ (topn) git clone https://github.com/nlpAThits/WOMBAT.git
+$ (topn) cd WOMBAT
+$ (topn) pip install .
+```
+
+Finally, install the following libraries:
+```shell
+$ (topn) conda install scipy scikit-learn gensim matplotlib colorama tqdm nltk==3.2.5
 ```
 
 # Reproducing the published results
@@ -29,19 +34,19 @@ $ pip install .
 The following call will reproduce the top avg_cos_sim result reached when only label information is used.
 
 ```shell
-$ python perform-c-p-matching.py  --mode dev --input label      --sim_ts .430 --units idf_tokens 
+$ (topn) python perform-c-p-matching.py  --mode dev --input label      --sim_ts .430 --units idf_tokens 
     --embeddings google  --measures avg_cos_sim  --print_classifications yes
 ```
 
 Since the top results for avg_cos_sim are all yielded with basically the same setting, just change the value for --input and --sim_ts to reproduce the other top baseline results.
 
 ```shell
-$ python perform-c-p-matching.py  --mode dev --input description --sim_ts .530 --units idf_tokens 
+$ (topn) python perform-c-p-matching.py  --mode dev --input description --sim_ts .530 --units idf_tokens 
     --embeddings google  --measures avg_cos_sim  --print_classifications yes
 ```
 
 ```shell
-$ python perform-c-p-matching.py  --mode dev --input both        --sim_ts .545 --units idf_tokens 
+$ (topn) python perform-c-p-matching.py  --mode dev --input both        --sim_ts .545 --units idf_tokens 
     --embeddings google  --measures avg_cos_sim  --print_classifications yes
 ```
 </p>
@@ -53,17 +58,17 @@ $ python perform-c-p-matching.py  --mode dev --input both        --sim_ts .545 -
 Likewise, the following calls will reproduce the three top top_n_cos_sim_avg results:
 
 ```shell
-$ python perform-c-p-matching.py  --mode dev --input label      --sim_ts .345 --units tokens 
+$ (topn) python perform-c-p-matching.py  --mode dev --input label      --sim_ts .345 --units tokens 
     --embeddings google  --measures top_n_cos_sim_avg --top_n 22 --print_classifications yes
 ```
 
 ```shell
-$ python perform-c-p-matching.py  --mode dev --input description --sim_ts .345 --units idf_tokens 
+$ (topn) python perform-c-p-matching.py  --mode dev --input description --sim_ts .345 --units idf_tokens 
     --embeddings glove --measures top_n_cos_sim_avg --top_n 6 --print_classifications yes
 ```
 
 ```shell
-$ python perform-c-p-matching.py  --mode dev --input both         --sim_ts .310 --units idf_tokens 
+$ (topn) python perform-c-p-matching.py  --mode dev --input both         --sim_ts .310 --units idf_tokens 
     --embeddings fasttext --measures top_n_cos_sim_avg --top_n 14 --print_classifications yes
 ```
 
