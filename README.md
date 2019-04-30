@@ -3,6 +3,8 @@ Code for the RELATIONS 2019 Workshop paper
 <br>
 <b>Semantic Matching of Documents from Heterogeneous Collections: A Simple and Transparent Method for Practical Applications</b> <a href="https://arxiv.org/abs/1904.12550">arXiv</a>
 
+# Installation
+
 ![DEV results avg_cosine](https://github.com/nlpAThits/TopNCosSimAvg/blob/master/images/dev-avg.png "DEV results avg_cosine")
 
 
