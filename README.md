@@ -13,6 +13,7 @@ Clone this repository:
 ```shell
 $ git clone https://github.com/nlpAThits/TopNCosSimAvg.git
 ```
+Put the required files into the folders ```data```, ```wombat-data```, ```concept-project-mapping-dataset```, and ```fastText``` (see the respective README.md files in these folders).
 
 The code in this repository uses the <a href="https://github.com/nlpAThits/WOMBAT">WOMBAT-API</a>, which can be installed as follows:
 ```shell
@@ -20,7 +21,6 @@ $ git clone https://github.com/nlpAThits/WOMBAT.git
 $ cd WOMBAT
 $ pip install .
 ```
-Put the required files into the folders ```data```, ```wombat-data```, ```concept-project-mapping-dataset```, and ```fastText``` (see the respective README.md files in these folders).
 
 # Reproducing the published results
 ![DEV results avg_cosine](https://github.com/nlpAThits/TopNCosSimAvg/blob/master/images/dev-avg.png "DEV results avg_cosine")
