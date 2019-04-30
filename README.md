@@ -38,10 +38,10 @@ The start, end, and step values for sim_ts can be supplied like this:
 where start, end, and step must be floats.
 
 The following call will search the whole range for 'label' for all four unit types, where <br>
-```types      = -tf -idf``` <br>
-```tokens     = +tf -idf``` <br>
-```idf_types  = -tf +idf``` <br>
-```idf_tokens = +tf +idf``` <br>
+ ```types      = -tf -idf``` <br>
+ ```tokens     = +tf -idf``` <br>
+ ```idf_types  = -tf +idf``` <br>
+ ```idf_tokens = +tf +idf``` <br>
 
 ``` --plot_curves yes``` causes results plots to be written to the ```./plots/``` folder.
 
