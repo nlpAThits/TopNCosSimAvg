@@ -41,8 +41,6 @@ The following call will search the whole range for 'label' for all four unit typ
 ```idf_types  = -tf +idf``` <br>
 ```idf_tokens = +tf +idf``` <br>
 
-<br>
-
 ``` --draw_plots yes``` causes results plots to be written to the ```./plots/``` folder.
 
 ```shell
