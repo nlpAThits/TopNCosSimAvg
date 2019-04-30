@@ -33,8 +33,10 @@ For the AVG_COS_SIM measure, tuning comprises a brute-force search for the optim
 <br>
 The start, end, and step values for sim_ts can be supplied like this:
 <br>
-```--sim_ts start:end:step```. 
+```--sim_ts start:end:step```,
 <br>
+where start, stop, and step must be floats.
+
 The following call will search the whole range for 'label' for all four unit types, where <br>
 ```types      = -tf -idf``` <br>
 ```tokens     = +tf -idf``` <br>
@@ -50,6 +52,20 @@ $ (topn) python perform-c-p-matching.py --input label --embeddings google --meas
 
 ![Tuning results cos_sim_avg](https://github.com/nlpAThits/TopNCosSimAvg/blob/master/images/tuning-cos_sim_avg_google_label.png "Tuning results cos_sim_avg")
 
+# Tuning: top_n_cos_sim_avg
+For the TOP_N_COS_SIM_AVG measure, tuning comprises a brute-force search for the optimal value for the sim_ts parameter (the minimum cosine similarity, cf. above), plus a search over the optimal value for the top_n parameter.
+
+The range of values for top_n to test can be supplied like this:
+<br>
+```--top_n start:end:step```,
+<br>
+where start, stop, and step must be integers.
+
+```shell
+$ (topn) python perform-c-p-matching.py --input label --embeddings google 
+  --measures top_n_cos_sim_avg --top_n 2:30:2 
+  --sim_ts 0.3:1.0:0.005 --units types,tokens,idf_types,idf_tokens --mode dev --draw_plots yes
+```
 
 
 # Reproducing the published results
