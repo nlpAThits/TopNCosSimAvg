@@ -34,6 +34,7 @@ For the AVG_COS_SIM measure, tuning comprises a brute-force search for the optim
 The start, end, and step values for sim_ts can be supplied like this:
 <br>
 ```--sim_ts start:end:step```. 
+<br>
 The following call will search the whole range for 'label' for all four unit types, where <br>
 ```types      = -tf -idf``` <br>
 ```tokens     = +tf -idf``` <br>
@@ -41,7 +42,8 @@ The following call will search the whole range for 'label' for all four unit typ
 ```idf_tokens = +tf +idf``` <br>
 
 <br>
-```--draw_plots yes``` causes results plots to be written to the ```./plots/``` folder
+
+``` --draw_plots yes``` causes results plots to be written to the ```./plots/``` folder.
 
 ```shell
 $ (topn) python perform-c-p-matching.py --input label --embeddings google --measures avg_cos_sim 
