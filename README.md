@@ -27,6 +27,18 @@ Finally, install the following libraries:
 $ (topn) conda install scipy scikit-learn gensim matplotlib colorama tqdm nltk==3.2.5
 ```
 
+# Tuning: AVG_COS_SIM
+
+For the AVG_COS_SIM measure, tuning comprises a brute-force search for the optimal value for the sim_ts parameter (the minimum cosine similarity). 
+The start, end, and step values for sim_ts can be supplied like this: ```--sim_ts start:end:step```. 
+The following call will search the whole range for 'label' for all four unit types: ```types = -tf +idf```
+
+```shell
+$ (topn) python perform-c-p-matching.py  --mode dev --input label --sim_ts 0.0:1.0:0.025 
+  --units types,tokens,idf_types,idf_tokens --embeddings google  --measures avg_cos_sim  --draw_plots
+```
+
+
 # Reproducing the published results
 ![DEV results avg_cosine](https://github.com/nlpAThits/TopNCosSimAvg/blob/master/images/dev-avg.png "DEV results avg_cosine")
 
