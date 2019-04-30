@@ -61,7 +61,7 @@ The range of values for top_n to test can be supplied like this:
 <br>
 where start, end, and step must be integers.
 <br>
-One row in the plot will be createdfor every value of top_n.
+One row in the plot will be created for every value of top_n.
 
 ```shell
 $ (topn) python perform-c-p-matching.py --input label --embeddings google 
