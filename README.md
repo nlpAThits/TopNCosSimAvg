@@ -9,7 +9,7 @@ Create a new virtual environment with Python 3.6 first:
 $ conda create --name topn python=3.6
 $ conda activate topn
 ```
-Clone this repository
+Clone this repository:
 ```shell
 $ git clone https://github.com/nlpAThits/TopNCosSimAvg.git
 ```
