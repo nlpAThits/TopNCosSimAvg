@@ -1,0 +1,1 @@
+Download the original data set from <a href="https://github.com/HongyuGong/Document-Similarity-via-Hidden-Topics/tree/master/concept-project-mapping-dataset">https://github.com/HongyuGong/Document-Similarity-via-Hidden-Topics/tree/master/concept-project-mapping-dataset</a>.
