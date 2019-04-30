@@ -31,7 +31,11 @@ $ (topn) conda install scipy scikit-learn gensim matplotlib colorama tqdm nltk==
 
 For the AVG_COS_SIM measure, tuning comprises a brute-force search for the optimal value for the sim_ts parameter (the minimum cosine similarity). 
 The start, end, and step values for sim_ts can be supplied like this: ```--sim_ts start:end:step```. 
-The following call will search the whole range for 'label' for all four unit types: ```types = -tf +idf```
+The following call will search the whole range for 'label' for all four unit types, where 
+```types      = -tf -idf```
+```tokens     = +tf -idf```
+```idf_types  = -tf +idf```
+```idf_tokens = +tf +idf```
 
 ```shell
 $ (topn) python perform-c-p-matching.py --input label --embeddings google --measures avg_cos_sim 
