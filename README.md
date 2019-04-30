@@ -22,8 +22,8 @@ $ pip install .
 ```
 Put the required files into the folders ```data```, ```wombat-data```, ```concept-project-mapping-dataset```, and ```fastText``` (see the respective README.md files in these folders).
 
+# Reproducing the published results
 ![DEV results avg_cosine](https://github.com/nlpAThits/TopNCosSimAvg/blob/master/images/dev-avg.png "DEV results avg_cosine")
-
 
 <p>
 The following call will reproduce the top avg_cos_sim result reached when only label information is used.
@@ -44,7 +44,6 @@ $ python perform-c-p-matching.py  --mode dev --input description --sim_ts .530 -
 $ python perform-c-p-matching.py  --mode dev --input both        --sim_ts .545 --units idf_tokens 
     --embeddings google  --measures avg_cos_sim  --print_classifications yes
 ```
-
 </p>
 
 ![DEV results top_n_cos_sim_avg](https://github.com/nlpAThits/TopNCosSimAvg/blob/master/images/dev-topn.png "DEV results top_n_cos_sim_avg")
