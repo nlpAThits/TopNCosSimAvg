@@ -52,7 +52,7 @@ $ (topn) python perform-c-p-matching.py --input label --embeddings google --meas
 
 ![Tuning results avg_cos_sim](https://github.com/nlpAThits/TopNCosSimAvg/blob/master/images/tuning-cos_sim_avg_google_label.png "Tuning results avg_cos_sim")
 
-# Tuning: top_n_cos_sim_avg
+# Tuning: TOP_N_COS_SIM_AVG
 For the TOP_N_COS_SIM_AVG measure, tuning comprises a brute-force search for the optimal value for the sim_ts parameter (the minimum cosine similarity, cf. above), <b>plus</b> a search over the optimal value for the top_n parameter.
 
 The range of values for top_n to test can be supplied like this:
